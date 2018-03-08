@@ -7,8 +7,8 @@ def prime?(i)
   array = Array(2...i)
     array.each do |d|
      if  i % d != 0 
-       return false
-     else return true
+       return true
+     else return false
      end
     end
   end
