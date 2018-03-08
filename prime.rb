@@ -5,8 +5,11 @@ def prime?(i)
     return true
   elsif i > 3 
   array = Array(2...i)
-    array.all? do |d|
-       i % d != 0 
+    array.each do |d|
+     if  i % d != 0 
+       return false
+     else return true
+     end
     end
   end
 end
